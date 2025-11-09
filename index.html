@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deima's Web Portfolio</title>
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Deima_N</a>
+        <nav>
+            <a target="_blank" href="https://github.com/deima96"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/deimaphi-nongkseh/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Deima</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                I’m a software developer who codes with curiosity and caffeine. I love solving real-world problems through thoughtful design and efficient engineering—and I never shy away from learning something new.
+                    Technology-driven Software Developer with over 2 years of hands-on experience in building scalable, high-performance
+web applications and microservices. Proficient in both front-end and back-end development, with a proven track record of
+designing robust architectures and integrating APIs for seamless user experiences. A strong collaborator with expertise in
+Python (FastAPI), Java (Spring Boot), and modern front-end frameworks like React.
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:deimanongkseh@gmail.com">Email me</a>
+                <a target="_blank" href="https://github.com/deima96">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/deimaphi-nongkseh/">LinkedIn</a>
+            </div>
+            <div id="play-game">
+                <button onclick="play()">Play Game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h2>Pick a color</h2>
+                <p style="display: none;">Great... Now its ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff"/>
+                <button onclick="resetColor()" style="display: none;">Reset</button>
+            </div>
+
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>Spring Framework | Spring Boot | Spring MVC | Spring Data | Spring Security | Spring Cloud</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>FastAPI | Flask </td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>ReactJS | NextJS | NodeJS & ExpressJS</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>MySql | PostgreSql | MongoDB | Docker | AWS | Git | TailwindCSS</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+
+                <div class="project-card">
+                    <div>
+                        <p>Jan, 2022</p>
+                        <h4>Meghalaya Residents Safety & Security Act</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ReactJs</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Java</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>SpringBoot</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PostgreSql</p>
+                            </div>
+                        </div>
+                        <p>This project is a digital platform developed under the Meghalaya Residents Safety & Security Act (MRSSA) to facilitate the registration of all tenants and landlords across the state of Meghalaya. The system aims to enhance safety, transparency, and accountability by maintaining a secure digital record of residents.</p>
+                        <div class="project-links">
+                            <a href="https://megrssa.nic.in" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img src="./public/Screenshot 2025-11-05 at 11.59.28 AM.png" alt="" class="big-img" />
+                    </div>
+
+                </div>
+                <div class="project-card">
+                    <div>
+                        <p> Oct, 2022</p>
+                        <h4>Kiniho</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ReactJs</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NodeJs & ExpressJs</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PostgreSql</p>
+                            </div>
+                        </div>
+                        <p>This project is an e-commerce website for Kiniho, a sustainable Eri silk brand from Meghalaya rooted in the philosophy of “creating responsibly.” The platform is designed to showcase and sell Kiniho’s ethically produced silk garments and accessories, highlighting their commitment to eco-friendly practices, traditional craftsmanship, and local artisans</p>
+                        <div class="project-links">
+                            <a href="https://kiniho.com/" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img src="./public/Screenshot 2025-11-06 at 8.54.50 PM.png" alt="" class="big-img" />
+                    </div>
+
+                </div>
+                <div class="project-card">
+                    <div>
+                        <p>July, 2024</p>
+                        <h4></h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ReactJs</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NodeJs & ExpressJs</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PostgreSql</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>AWS S3 Bucket</p>
+                            </div>
+                        </div>
+                        <p>This project involved designing and developing a website for the Meghalaya Farmers’ (Empowerment) Commission. The website serves as an interactive platform that bridges the gap between farmers and the Government of Meghalaya. It highlights the Commission’s objectives—studying and addressing key issues faced by farmers, and suggesting measures to make farming more attractive and profitable. The site provides easy access to information, reports, and resources, empowering farmers and encouraging youth participation in the agricultural sector.</p>
+                        <div class="project-links">
+                            <a href="https://www.mfec.in/" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img src="./public/Screenshot 2025-11-07 at 2.05.27 PM.png" alt="" class="big-img" />
+                    </div>
+
+                </div>
+
+                
+                <div class="project-card">
+                    <div>
+                        <p>Aug, 2025</p>
+                        <h4>Digitide Wafers Portal</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ReactJs</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Java</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>SpringBoot</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>PostgreSql</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>AWS S3 Bucket</p>
+                            </div>
+                        </div>
+                        <p>The Digitide Wafers Portal is an employee web platform designed to streamline internal communication and engagement within the organization. It allows employees to securely sign in, access company updates, and stay informed about ongoing activities and announcements. The portal provides a centralized space for employees to connect with organizational developments and stay up to date in real time.</p>
+                        <div class="project-links">
+                            <a href="https://wafers.digitide.com/" target="_blank">Live</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img src="./public/Screenshot 2025-11-07 at 2.46.49 PM.png" />
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer><a href="/"><p class="specialShadow">Deima_N 2025 <i class="fa-regular fa-copyright pr-1"></i></p></a></footer> 
+    <script>
+        const body = document.querySelector('body');
+        const colorInput = document.getElementById("color-picker");
+        const colorDiv = document.querySelector(".color-div");
+        const hiddenText = document.querySelector(".color-div p");
+        const resetBtn = document.querySelector(".color-div button");
+        const playBtn = document.getElementById("play-game");
+
+        function play(){
+            colorDiv.style.display = 'block';
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor(){
+            const selectedColor = colorInput.value;
+            body.style.background = selectedColor;
+            resetBtn.style.display = 'block';
+            hiddenText.style.display = 'block';
+            colorInput.style.display = 'none';
+        }
+        function resetColor(){
+            body.style.background = 'var(--background-primary)';
+            playBtn.style.display='block';
+            colorInput.style.display='block';
+            
+            hiddenText.style.display='none';
+            resetBtn.style.display='none';
+            colorDiv.style.display='none';
+        }
+    </script>
+</body>
+</html>
